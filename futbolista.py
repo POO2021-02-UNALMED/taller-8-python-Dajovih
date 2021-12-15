@@ -38,4 +38,5 @@ class Futbolista(Deportista):
         cls._listaFutbolistas=nuevo
 
     def __str__(self):
-        return ("Mi nombre es "+self.getNombre()+" soy profesional en el deporte "+self.getDeporte()+" Tengo"+str(self.getEdad())+" años de edad y llevo "+str(self.getAñosPracticando())+" años en el deporte")
+        return "Mi nombre es {} soy profesional en el deporte {} Tengo {} años de edad y llevo {} años en el deporte".format(self.getNombre(), self.getDeporte(), str(self.getEdad()), str(self.getAñosPracticando()))
+    
