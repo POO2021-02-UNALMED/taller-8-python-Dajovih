@@ -9,7 +9,7 @@ class Futbolista(Deportista):
         self._golesMarcados=goles
         self._tarjetasRojas=rojas
         self._piernaHabil=pierna
-        Futbolista.listaFutbolistas.append(self)
+        Futbolista._listaFutbolistas.append(self)
 
     @classmethod
     def getListaFutbolistas(cls):
