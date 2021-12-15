@@ -1,9 +1,9 @@
 from persona import Persona
 
 
-class Deportista(Persona):
+class Deportista:
     def __init__(self,nombre,edad,altura,sexo,deporte,años):
-        super().__init__(nombre,edad,altura,sexo)
+        Persona().__init__(nombre,edad,altura,sexo)
         self._deporte=deporte
         self._añosPracticando=años
 
